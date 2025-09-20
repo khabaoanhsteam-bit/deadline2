@@ -79,7 +79,7 @@ div.corner {
     background-color: #E2E2E2;
 }
 .color {
-    background-color: #F1F1F1;
+    background-color: #FFFFFF;
 }
 .header {
     padding-top: 25px;
@@ -87,4 +87,11 @@ div.corner {
 }
 .footer {
     background-color: #D9D9D9;
+}
+footer {
+  height: 75px;                 
+}
+footer .container.footer {
+  height: 100%;
+  padding: 0;                   
 }
