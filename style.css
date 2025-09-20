@@ -1,0 +1,114 @@
+
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+html {
+  color: #333333;
+  font-size: 20px;
+  font-family: "Be Vietnam Pro", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+body { margin: 0; }
+
+/* Utility */
+.round { border-radius: 8px; }
+.light-dark { background-color: #F1F1F1; }
+
+/* ===== Layout ===== */
+.container {
+  width: min(1200px, 95%);
+  margin-inline: auto;
+  padding-block: 80px;
+}
+
+/* ===== Header ===== */
+.header { padding-block: 25px; }
+
+.inner-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.logo, .menu, .button {
+  background-color: #E2E2E2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo  { width: 200px; height: 60px; }
+.menu  { height: 34px; flex: 1 1 auto; }
+.button{ width: 120px; height: 42px; }
+
+/* ===== Sections (shared) ===== */
+.section { padding-block: 80px; }
+
+/* Section 1: content + image side-by-side */
+.section:nth-of-type(1) .inner-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.section:nth-of-type(1) .content {
+  min-height: 267px;
+  background: #F1F1F1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.section:nth-of-type(1) .image {
+  min-height: 520px;
+  background: #D9D9D9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sections 2–4: title + grid of boxes */
+.box {
+  background: #E2E2E2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.box-title {
+  /* If you also load Lora in your HTML, this will use it */
+  font-family: "Lora", Georgia, serif;
+  font-weight: 700;
+  width: min(600px, 100%);
+  min-height: 80px;
+  margin: 0 auto 40px;
+  background: #F1F1F1;
+}
+
+.section:nth-of-type(n+2) .inner-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+  gap: 20px;
+}
+
+.section:nth-of-type(n+2) .inner-item {
+  min-height: 300px;
+}
+
+/* Example variants if you later need different sizes
+.inner-item.thin   { min-height: 300px; }
+.inner-item.normal { min-height: 300px; }
+.inner-item.big    { min-height: 420px; }
+*/
+
+/* ===== Footer (optional if you add one) ===== */
+.footer { background-color: #D9D9D9; padding: 40px 0; }
