@@ -96,3 +96,28 @@ footer .container.footer {
   padding: 0;                   
 }
 
+/* Mobile view (≤ 678px) */
+@media (max-width: 678px) {
+  div.inner-header, 
+  div.inner-section {
+    flex-direction: column;      
+    align-items: center;
+  }
+
+  #logo, #menu, #button,
+  #content, #image,
+  .inner-item-1, .inner-item-2, .inner-item-3,
+  .box-title {
+    width: 90% !important;       
+    max-width: 100%;
+  }
+
+  #menu {
+    margin: 10px 0;
+  }
+
+  .box-title {
+    text-align: center;
+  }
+}
+
