@@ -1,0 +1,105 @@
+@media only screen and (max-width: 1245px) {
+html {
+    color: #333333;
+    font-size: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    line-height: 100%;
+}
+body {
+    margin: 0;
+}
+.button {
+    background-color: #E2E2E2;
+}
+.light-dark {
+    background-color: #F1F1F1;
+}
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer {
+    background-color: #D9D9D9;
+}
+#Tablet {
+    display: flex;
+}
+#Mobile {
+    display: none;
+}
+#PC {
+    display: flex;
+}
+div.container {
+    --tb: 40px;
+    padding-top: var(--tb);
+    padding-bottom: var(--tb);
+}
+div.content {
+    display: flex;
+    width: 720px;
+    max-width: 992px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+div.small-content {
+    grid-template-columns: repeat(3, auto);
+}
+div.space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 75%;
+}
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+div.round {
+    border-radius: 8px;
+}
+#Logo {
+    width: 140px;
+    height: 42px;
+}
+#Menu {
+    height: 30px;
+    width: 418px;
+}
+#Button {
+    width: 108px;
+    height: 36px;
+}
+#Content {
+    width: 345px;
+    height: 267px;
+}
+#Image {
+    width: 345px;
+    height: 310px;
+}
+.item-thin {
+    width: 220px;
+    height: 300px;
+}
+.item-normal {
+    width: 345px;
+    height: 300px;
+}
+.item-big {
+    width: 345px;
+    height: 420px;
+}
+.Title {
+    font-family: "Lora", serif;
+    width: 720px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+}
